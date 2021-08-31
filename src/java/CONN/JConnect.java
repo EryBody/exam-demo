@@ -19,11 +19,16 @@ public class JConnect {
     public Connection getNewConnection(){
         
             //Localhost
-            Connection conn = null;
-            String connectionString ="jdbc:mysql://localhost:3306/exam_system";
-            String driver = "com.mysql.jdbc.Driver";
-            String username = "root", password = "password";
+//            Connection conn = null;
+//            String connectionString ="jdbc:mysql://localhost:3306/exam_system";
+//            String driver = "com.mysql.jdbc.Driver";
+//            String username = "root", password = "password";
              
+            //Server connection String
+            Connection conn = null;
+            String connectionString = "jdbc:mysql://us-cdbr-east-04.cleardb.com:3306/heroku_bc1cbc1f565302d";
+            String driver = "com.mysql.jdbc.Driver";
+            String username = "b8684e1c8d9c0b", password = "6188916c";
   
             try {
                 Class.forName(driver).newInstance();

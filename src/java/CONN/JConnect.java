@@ -18,10 +18,12 @@ public class JConnect {
    
     public Connection getNewConnection(){
         
-             Connection conn = null;
-             String connectionString ="jdbc:mysql://localhost:3306/exam_system";
-             String driver = "com.mysql.jdbc.Driver";
-             String username = "root", password = "password";
+            //Localhost
+            Connection conn = null;
+            String connectionString ="jdbc:mysql://localhost:3306/exam_system";
+            String driver = "com.mysql.jdbc.Driver";
+            String username = "root", password = "password";
+             
   
             try {
                 Class.forName(driver).newInstance();
